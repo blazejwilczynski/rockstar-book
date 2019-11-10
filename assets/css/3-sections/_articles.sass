@@ -1,0 +1,152 @@
+
+section.articles
+  background: black
+  max-width: 700px
+  margin: 50px auto 15px
+  padding-bottom: 0px
+
+  .article-date
+    margin: 0 0 10px 10px
+    color: rgba(255, 255, 255, 0.6)
+
+  .left-column-article1
+    align-items: center
+    display: inline-block
+    width: 100%
+    height: 75px
+    //background: pink
+    color: white
+    font-family: 'Press Start 2P'
+
+
+    span.article-number
+      font-size: 22px
+      margin: 20px 0px 0px 10px
+
+
+
+
+    span.article-name
+      font-size: 14px
+      margin: 10px 0px 0px 10px
+
+
+  .right-column-article1
+    float: right
+    width: 0%
+    height: 75px
+    display: inline-block
+    //background: black
+    display: flex
+    justify-content: center
+    align-items: center
+
+
+    .article1-logo
+      height: 50px
+      width: 50px
+      background-image: url('../img/think-icon.svg')
+      background-size: cover
+      display: none
+
+    .article2-logo
+      height: 50px
+      width: 50px
+      background-image: url('../img/band.svg')
+      background-size: cover
+      display: none
+
+  .article-text
+    font-family: 'Open Sans'
+    font-weight: 400
+    color: rgba(255, 255, 255, 0.8)
+    text-align: justify
+    margin: 10px 10px
+
+
+    h1
+      font-size: 20px
+      font-weight: 700
+      color: rgba(255, 255, 255, 0.9)
+      padding-top: 10px
+      padding-bottom: 10px
+
+    h2
+      font-size: 16px
+      font-weight: 700
+      color: rgba(255, 255, 255, 0.9)
+      padding-top: 10px
+
+    #naf-design
+      width: 95%
+      margin: 20px 0px 20px 15px
+
+    #party-leaflet
+      width: 95%
+      margin: 40px 0px 20px 15px
+
+    #guitar-hero-poster
+      width: 95%
+      margin: 40px 0px 20px 15px
+
+    #creepy-code-template
+      width: 95%
+      margin: 40px 0px 20px 15px
+      //border: solid 2px red
+
+    #header-yellow
+      width: 95%
+      margin: 40px 0px 25px 15px
+
+    #header-red
+      width: 95%
+      margin: 25px 0px 25px 15px
+
+    .article-buttons-wrap
+      height: 100px
+      width: 100%
+      align-items: center
+      justify-content: center
+
+      .inner-article-buttons-wrap
+        width: 50%
+        height: 100%
+        margin-left: 25%
+        display: flex
+        align-items: center
+        justify-content: space-around
+
+
+        .button-article
+          padding: 0.35em 1.2em
+          border: 0.1em solid #FFF
+          margin: 0 0.3em 0.3em 0
+          border-radius: 0.12em
+          text-decoration: none
+          font-weight: 500
+          color: #FFF
+          transition: all 0.2s
+
+        .button-article:hover
+          color: #000
+          background-color: #fff
+
+@media screen and (max-width: 710px)
+
+  section.articles
+    width: 90%
+
+
+
+@media screen and (max-width: 540px)
+
+  section.articles
+
+    .left-column-article1
+      height: 70px
+
+      span.article-number
+        font-size: 16px
+
+      span.article-name
+        font-size: 12px

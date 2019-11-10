@@ -1,0 +1,167 @@
+*
+  box-sizing: border-box
+
+
+body
+  background: #140625
+  color: #F58F45
+
+section.party-leaflet
+
+  .leaflet-wrap
+    width: 900px
+    height: 900px
+    margin: 0 auto
+
+
+    .leaflet-border
+      height: 800px
+      width: 700px
+      margin: 50px auto 0px
+      background: #140625
+      border: 10px solid #F58F45
+      display: block
+
+      .party-truck-wrap
+        width: 100%
+        height: 565px
+        //background: yellow
+        border-bottom: 10px solid #F58F45
+
+        .party-truck-image
+          background: url('../img/party-truck-1000px.png')
+          background-position: center
+          background-size: cover
+          height: 550px
+          width: 550px
+          margin: 5px auto 0
+
+      .party-info-wrap
+        width: 100%
+        height: 210px
+
+        .party-band-logo-wrap
+          height: 100%
+          width: 235px
+          border-right: 10px solid #F58F45
+          display: inline-block
+          float: left
+
+
+          .party-band-logo-flex
+            flex-direction: column
+            justify-content: center
+            display: flex
+            height: 100%
+            width: 235px
+
+
+            .party-band-logo
+              height: 165px
+              width: 120px
+              margin: 0px auto
+              padding-top: 10px
+              background: url('../img/party-band-logo.png')
+              background-position: center
+              background-size: cover
+              display: inline-block
+              //float: left
+
+        .city-timer-wrap
+          height: 100%
+          margin: 0
+          padding: 0
+          width: 445px
+          //background: pink
+          display: inline-block
+          //float: left
+
+          .city-date
+            height: 75px
+            width: 100%
+            //background: teal
+            border-bottom: 10px solid #F58F45
+            text-align: center
+
+
+            .date
+              width: 200px
+              height: 100%
+              //background: mediumaquamarine
+              display: inline-block
+              float: left
+              border-right: 10px solid #F58F45
+              font-family: 'bungeeok'
+              font-size: 35px
+              padding-top: 10px
+
+            .city
+              width: 245px
+              height: 100%
+              //background: darkseagreen
+              display: inline-block
+              font-size: 35px
+              padding-top: 18px
+              font-family: 'Slash'
+
+
+
+          .timer-wrap
+            width: 100%
+            height: 135px
+            //background: yellow
+
+            .timer-flex
+              height: 50%
+              width: 100%
+              //background: indianred
+              display: flex
+              justify-content: space-around
+              align-items: center
+              text-align: center
+
+              .js-days-hours-min-sec
+                height: 80%
+                width: 100px
+                //background: darksalmon
+                font-family: 'bungeeok'
+                font-size: 45px
+                padding-top: 5px
+
+
+            .names-flex
+              height: 50%
+              width: 100%
+              //background: salmon
+              display: flex
+              justify-content: space-around
+              align-items: center
+              text-align: center
+
+              .name-days-hours-min-sec
+                height: 80%
+                width: 100px
+                //background: darksalmon
+                font-family: 'Slash'
+                font-size: 35px
+                //padding-top: 15px
+
+
+.not-responsive
+  display: none
+  font-family: 'Open Sans'
+
+@media screen and (max-width: 901px)
+
+  .not-responsive
+    display: block
+    text-align: center
+    font-weight: 600
+    font-family: 'Open Sans'
+
+    .not-responsive-info
+      margin: 50px auto
+
+
+  section.party-leaflet
+    display: none

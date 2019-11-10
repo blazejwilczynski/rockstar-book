@@ -1,0 +1,284 @@
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,500,600,700&display=swap");
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block; }
+
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden], template {
+  display: none; }
+
+a {
+  background: 0 0; }
+
+a:active, a:hover {
+  outline: 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: 700; }
+
+dfn {
+  font-style: italic; }
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -.5em; }
+
+sub {
+  bottom: -.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 1em 40px; }
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+pre {
+  overflow: auto; }
+
+code, kbd, pre, samp {
+  font-family: monospace,monospace;
+  font-size: 1em; }
+
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+button {
+  overflow: visible; }
+
+button, select {
+  text-transform: none; }
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+input {
+  line-height: normal; }
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  height: auto; }
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+legend {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto; }
+
+optgroup {
+  font-weight: 700; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td, th {
+  padding: 0; }
+
+* {
+  box-sizing: border-box;
+  font-family: "Lato"; }
+
+/*! start of my .css file from .sass files */
+
+header {
+  height: 200px;
+  width: 1100px;
+  margin: 20px auto 0px; }
+  header .left-column {
+    height: 100%;
+    float: left;
+    margin: 0;
+    width: 210px;
+    display: inline-block;
+    padding: 0; }
+    header .left-column .naf-logo {
+      height: 135px;
+      width: 100%;
+      display: block;
+      border: 1px solid #000;
+      background-image: url("../img/naf-logo-left.png");
+      background-position: center;
+      background-size: cover; }
+    header .left-column .naf-social-links {
+      height: 65px;
+      width: 100%;
+      display: block;
+      border: 1px solid #000;
+      box-sizing: border-box;
+      border-top: 0; }
+  header .center-column {
+    float: left;
+    display: inline-block;
+    margin: 0;
+    height: 100%;
+    width: 700px;
+    padding: 0; }
+    header .center-column .naf-line-logo {
+      width: 100%;
+      height: 135px;
+      border: 1px solid #000;
+      border-left: 0;
+      background-image: url("../img/naf-line-logo.png");
+      background-position: center;
+      background-size: cover; }
+    header .center-column .naf-empty-box {
+      width: 100%;
+      height: 65px;
+      border: 1px solid #000;
+      border-left: 0;
+      border-top: 0; }
+  header .right-column {
+    float: left;
+    display: inline-block;
+    margin: 0;
+    height: 100%;
+    width: 190px;
+    padding: 0; }
+    header .right-column .creepy-logo {
+      height: 100%;
+      width: 100%;
+      border: 1px solid #000;
+      border-left: 0;
+      background-image: url("../img/naf-creepy-bobek.jpg");
+      background-position: center;
+      background-size: cover; }
+
+.article-wrap {
+  margin: 0px auto 20px;
+  width: 1100px;
+  height: 750px;
+  border: 1px solid #000;
+  border-top: 0; }
+  .article-wrap .article-box {
+    height: 100%;
+    width: 930px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .article-wrap .article-box .article-header {
+      height: 110px;
+      width: 100%;
+      display: block;
+      border: 1px solid #000; }
+      .article-wrap .article-box .article-header .bones-image {
+        width: 15%;
+        height: 100%;
+        border-right: 1px solid #000;
+        background: url("../img/bones-image.png");
+        background-position: center;
+        background-size: cover;
+        display: inline-block;
+        float: left; }
+      .article-wrap .article-box .article-header .article-number {
+        width: 85%;
+        height: 100%;
+        display: inline-block;
+        float: left;
+        text-align: center;
+        padding-top: 10px;
+        font-weight: 100;
+        font-size: 70px; }
+    .article-wrap .article-box .article-text-wrap {
+      height: 490px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border: 1px solid #000;
+      border-top: 0; }
+      .article-wrap .article-box .article-text-wrap .article-text {
+        margin: 30px auto;
+        font-weight: 300;
+        height: 600px;
+        width: 800px;
+        text-align: justify; }
+
+.not-responsive {
+  display: none; }
+
+@media screen and (max-width: 1149px) {
+  .not-responsive {
+    display: block;
+    text-align: center;
+    font-weight: 600; }
+    .not-responsive .not-responsive-info {
+      margin: 50px auto; }
+
+  header {
+    display: none; }
+
+  .article-wrap {
+    display: none; } }

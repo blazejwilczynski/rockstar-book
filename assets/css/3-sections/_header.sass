@@ -1,0 +1,216 @@
+.home-wrap
+  header
+    font-family: 'Montserrat', sans-serif
+    background: #FBEC36
+    width: 135px
+    height: auto
+    padding: 30px 0
+    z-index: 9
+
+
+    .header-position
+      position: fixed
+      left: 0
+      top: 0
+      bottom: 0
+      width: 135px
+      display: flex
+      flex-direction: column
+      //justify-content: space-between
+
+    .logo
+      +hide-text
+      max-width: 135px
+      background:
+        image: url('../img/creepy-code.png')
+        repeat: no-repeat
+        position: center
+        size: contain
+      height: 115px
+      //margin-top: 0px
+      padding-top: 10px
+      padding: 0px
+
+    .site-nav
+
+      ul
+        list-style: none
+        text-align: right
+        margin: 30px 0
+        padding: 0 20px 0 0
+
+        li
+          margin-top: 0px
+          //margin-bottom: 5px
+          // rozszerza linki w menu
+
+          a:link
+            text-decoration: none
+            font-family: 'Montserrat'
+            color: black
+            font-weight: 500
+            font-size: 18px
+
+          a:visited
+            text-decoration: none
+            color: black
+
+          a:hover
+            text-decoration: none
+            font-weight: 700
+
+    .social-icons-wrap
+      height: 30px
+      width: 135px
+      margin: 150px 0 0 0
+      //background: pink
+      //display: flex
+      //align-items: center
+      //justify-content: space-around
+
+      .github-icon
+        height: 30px
+        width: 30px
+        float: right
+        background-position: center
+        background-size: cover
+        margin: 0 20px 0 0
+
+        path
+          fill: rgb(234,41,85)
+
+
+      .github-icon:hover path
+        fill: rgb(235, 92, 125)
+
+      .behance-icon
+        height: 30px
+        width: 30px
+        float: right
+        background-position: center
+        background-size: cover
+        margin: 0 7px 0 0
+
+        path
+          fill: rgb(234,41,85)
+
+      .behance-icon:hover path
+        fill: rgb(235, 92, 125)
+
+      //.behance-icon:visited
+        background-image: url('../img/behance-logo-1.png')
+
+  .mobile-nav
+    display: none
+    background: white
+    padding: 30px 0 20px
+    position: fixed
+    //display: block
+    width: 100%
+    z-index: 2
+    //position: absolute
+    transform: translateY(-100%)
+    transition: all 0.3s ease-in-out
+
+
+    ul
+      list-style: none
+      margin: 0
+      padding: 0
+
+      li
+        text-align: center
+        margin-bottom: 10px
+
+        a:link
+          text-decoration: none
+          font-family: 'Montserrat'
+          color: black
+          font-weight: 400
+          font-size: 16px
+
+        a:visited
+          text-decoration: none
+          color: black
+
+        a:hover
+          font-weight: 500
+
+
+
+
+    //mobile navigation
+
+  //mobile-nav
+    display: none
+    position: absolute
+    width: 100%
+    background: white
+    padding: 30px 0 20px
+    transform: translateY(-100%)
+    transition: all 0.3s ease-in-out
+
+
+    ul
+      list-style: none
+      padding: 0
+      margin: 0
+
+      li
+        text-align: center
+        margin-bottom: 10px
+
+        a:link
+          text-decoration: none
+          font-family: 'Montserrat'
+          color: black
+          font-weight: 400
+          font-size: 16px
+
+        a:visited
+          text-decoration: none
+          color: black
+
+        a:hover
+          font-weight: 500
+
+
+@media (max-width: 1000px)
+
+  .home-wrap header
+    width: auto
+    //padding: 5px 0
+    padding-bottom: 20px
+    height: 70px
+    position: fixed
+    top: 0
+    width: 100%
+    overflow: hidden
+
+
+    .header-position
+      width: auto
+      position: relative
+      top: auto
+      bottom: auto
+      left: auto
+      display: flex
+      //display: block
+      flex-direction: row
+      align-items: center
+      justify-content: space-between
+
+
+
+
+    .site-nav
+      display: none
+
+    .logo
+      height: 80px
+      top: -80px
+      z-index: 100
+      max-width: 135px
+      position: absolute
+
+      //display: inline-block
