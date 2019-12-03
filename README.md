@@ -1,3 +1,3 @@
-# Creepy Code
+# Rockstar Book
 
-Just learining around for now!
+Coding website for my book!

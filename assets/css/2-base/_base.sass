@@ -80,18 +80,18 @@ img::-moz-selection
   background: transparent
 
 body
-  -webkit-tap-highlight-color: $selectionColor
+
 
 
 
 /* Basic Styles
   ------------------------------------	*/
 body
-  background: black
+  background: #EAE6DD
   font-size: 14px
   line-height: 1.6
-  font-family: 'Open Sans', sans-serif
-  color: $textColor
+  font-family: 'Lato', sans-serif
+
   -webkit-font-smoothing: antialiased
   -webkit-text-size-adjust: 100%
 
@@ -99,8 +99,6 @@ svg
   +size(100%)
 
 h3
-  @extend %small-bold
-  color: $accent-light
   text-align: center
   padding: 100px 0 30px
 
@@ -108,14 +106,3 @@ fieldset
   padding: 0
   margin: 0
   border: none
-
-@media screen and (max-width: 480px)
-  h3
-    padding: 50px 0 50px
-
-section:nth-child(odd)
-  background: $bgcolor
-  padding-bottom: 100px
-
-  h3
-    color: darken($accent-light, 10%)
