@@ -1,0 +1,101 @@
+.book {
+
+  width: 100%;
+  padding-top: 35px;
+ 
+}
+
+.book .book-elements-wrap {
+  max-width: 1060px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.book .book-elements-wrap .cover-container {
+  height: 657px;
+  width: 474px;
+ 
+  margin-right: 15px;
+  position: relative;
+}
+
+
+.book .book-elements-wrap .cover-container .rockstar-cover {
+  height: 628px;
+  width: 439px;
+  background-image: url('../img/rockstar-cover-hq.jpg');
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:contain;
+  position: absolute;
+  margin-left: 29px;
+  z-index: 100;
+  
+}
+
+.book .book-elements-wrap .cover-container  .cover-plate {
+  height: 628px;
+  width: 439px;
+  background: $orange;
+  top: 40px;
+  z-index: 1;
+  
+  position: absolute;
+}
+
+
+.book .book-elements-wrap .book-download-container {
+  height: 720px;
+  width: 585px;
+  margin-left: 15px;
+
+}
+
+.book .book-elements-wrap .book-download-container .book-download-title {
+  text-align: center;
+  color: $dark-blue;
+  opacity: 0.75;
+  font-size: 22px;
+
+}
+
+.book .book-elements-wrap .book-download-container  .book-download-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.book .book-elements-wrap .book-download-container  .book-download-buttons .button-epub,.button-mobi,.button-pdf  {
+  font-size: 20px;
+  color: white;
+  margin-left: 30px;
+  background: $orange;
+  border: 2px solid $orange;
+  border-radius: 2em;
+  padding:0.3em 1.2em;
+
+}
+
+
+
+.book .book-elements-wrap .book-download-container  .book-download-buttons .button-epub:hover, .button-mobi:hover, .button-pdf:hover {
+  background: white;
+  border-color: $orange;
+  color: $orange;
+}
+
+
+.book-description {
+  margin: 45px auto;
+  font-size: 18px;
+  font-weight: 300;
+  max-width: 500px;
+  text-align: justify;
+  
+}
+
+
