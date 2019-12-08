@@ -6,6 +6,8 @@ header {
   height: 500px;
   width: 100%;
   background-color: $yellow-base;
+  position: relative;
+  
 }
 
 header nav {
@@ -15,6 +17,8 @@ header nav {
   font-size: 17px;
   font-weight: 400;
   padding-top: 10px;
+  position: relative;
+  z-index: 100;
 }
 
 header nav .logo {
@@ -26,6 +30,8 @@ header nav .logo {
   float: left;
   margin-top: 5px;
   margin-left: 10px;
+  z-index: 10;
+  position: static;
 }
 
 header nav .nav-element {
@@ -36,11 +42,13 @@ header nav .nav-element {
   margin-left: 25px;
   text-transform: uppercase;
   height: 20px;
+  z-index: 10;
 }
 
 header nav .nav-element > a {
   text-decoration: none;
   color: inherit;
+  z-index: 10;
 }
 
 header nav .nav-element > a:hover {
@@ -60,6 +68,7 @@ header nav  .bolt {
   float: left;
   opacity: 0;
   transition: opacity 0.4s ease;
+  z-index: 10;
 
 }
 
@@ -81,6 +90,7 @@ header nav  .bolt {
   background-repeat: no-repeat;
   margin-top: 14px;
   margin-right: 15px;
+  z-index: 10;
 
 
 }
@@ -116,6 +126,7 @@ header .header-elements-wrap {
 header .header-elements-wrap .header-elements-center {
   height: 370px;
   width: 1055px;
+  z-index: 10;
 }
 
 header .header-elements-wrap .header-elements-center .header-elements-main {
@@ -156,4 +167,43 @@ header .header-elements-wrap .header-elements-center .header-elements-coffe {
   background-repeat: no-repeat;
   margin-left: 0px;
   padding: 0;
+}
+
+.header-element-1 {
+  height: 96px;
+  width: 800px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url('../img/header-element-1.svg');
+  background-repeat: no-repeat;
+  z-index: 0;
+  opacity: 0.99;
+
+}
+
+.header-element-2 {
+  height: 155px;
+  width: 476px;
+  position: absolute;
+  top: 345px;
+  right: 150px;
+  background-image: url('../img/header-element-2.svg');
+  background-repeat: no-repeat;
+  z-index: 0;
+  opacity: 0.99;
+
+}
+
+.header-element-3 {
+  height: 225px;
+  width: 342px;
+  position: absolute;
+  top: 275px;
+  left: 35px;
+  background-image: url('../img/header-element-3.svg');
+  background-repeat: no-repeat;
+  z-index: 0;
+  opacity: 0.99;
+
 }
