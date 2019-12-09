@@ -207,3 +207,18 @@ header .header-elements-wrap .header-elements-center .header-elements-coffe {
   opacity: 0.99;
 
 }
+
+/* Media query 1100px */
+
+
+@media screen and (max-width: 1100px) {
+
+header .header-elements-wrap .header-elements-center .header-elements-coffe {
+  display: none;
+}
+
+header .header-elements-wrap .header-elements-center {
+  width: 895px;
+
+}
+}
