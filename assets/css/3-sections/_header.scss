@@ -222,3 +222,16 @@ header .header-elements-wrap .header-elements-center {
 
 }
 }
+
+/* Media query 950px */
+
+@media screen and (max-width: 950px) {
+  header .header-elements-wrap .header-elements-center .header-elements-denaturat {
+    display: none;
+  }
+
+  header .header-elements-wrap .header-elements-center {
+    width: 775px;
+  }  
+
+}

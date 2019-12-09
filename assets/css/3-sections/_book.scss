@@ -40,7 +40,7 @@
   height: 628px;
   width: 439px;
   background: $orange;
-  top: 40px;
+  top: 30px;
   z-index: 1;
   
   position: absolute;
@@ -51,6 +51,7 @@
   height: 720px;
   width: 585px;
   margin-left: 15px;
+  
 
 }
 
@@ -70,13 +71,13 @@
 }
 
 .book .book-elements-wrap .book-download-container  .book-download-buttons .button-epub,.button-mobi,.button-pdf  {
-  font-size: 20px;
+  font-size: 18px;
   color: white;
   margin-left: 30px;
   background: $orange;
   border: 2px solid $orange;
   border-radius: 2em;
-  padding:0.3em 1.2em;
+  padding:0.25em 1.0em;
 
 }
 
@@ -98,8 +99,122 @@
   
 }
 
+/* media query 1150px */
 
+@media screen and (max-width: 1150px) {
   
+  /* rockstar cover for 1150px dimensions */
+
+  .book .book-elements-wrap {
+    max-width: 1010px;
+  }  
+
+  .book .book-elements-wrap .cover-container {
+    height: 607px;
+    width: 424px;
+  }  
+
+  .book .book-elements-wrap .cover-container .rockstar-cover {
+    height: 578px;
+    width: 399px;
+  }
+
+  .book .book-elements-wrap .cover-container  .cover-plate {
+    height: 578px;
+    width: 399px;
+  }
+  
+  /* rockstar description and download buttons for 1150px dimensions */
+
+  .book .book-elements-wrap .book-download-container {
+    height: 650px;
+    width: 450px;
+    margin-left: 30px;
+  } 
+
+  .book .book-elements-wrap .book-download-container .book-download-title {
+    font-size: 20px;
+  }
+
+}
+
+/* media query 950px */
+
+@media screen and (max-width: 950px) {
+
+  .book .book-elements-wrap {
+    max-width: 960px;
+  }   
+
+ /* rockstar cover for 950px dimensions */
+
+ .book .book-elements-wrap .cover-container {
+  height: 557px;
+  width: 398px;
+}  
+
+.book .book-elements-wrap .cover-container .rockstar-cover {
+  height: 527px;
+  width: 368px;
+}
+
+.book .book-elements-wrap .cover-container  .cover-plate {
+  height: 527px;
+  width: 368px;
+}
+
+.book .book-elements-wrap .book-download-container {
+  height: 600px;
+  width: 400px;
+  margin-left: 20px;
+} 
+
+.book .book-elements-wrap .book-download-container .book-download-title {
+  font-size: 18px;
+}
+
+.book-description {
+  font-size: 17px;
+}
 
 
+}
 
+/* media query 900px */
+
+@media screen and (max-width: 900px) {
+
+  .book .book-elements-wrap {
+    flex-wrap: wrap;
+  }
+
+  .book .book-elements-wrap .cover-container {
+    height: 657px;
+    width: 474px;
+  }   
+
+  .book .book-elements-wrap .cover-container .rockstar-cover {
+    height: 628px;
+    width: 439px;
+  }
+
+  .book .book-elements-wrap .cover-container  .cover-plate {
+    height: 628px;
+    width: 439px;
+  } 
+
+  .book .book-elements-wrap .book-download-container {
+    width: 585px;
+    margin-top: 30px;
+  }  
+
+  .book .book-elements-wrap .book-download-container .book-download-title {
+    font-size: 22px;
+  } 
+
+  .book-description {
+    font-size: 18px;
+  } 
+
+
+} 
