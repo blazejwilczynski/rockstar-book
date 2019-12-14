@@ -258,3 +258,36 @@ header .header-elements-wrap .header-elements-center {
   }  
 
 }
+
+/* Media query 670px to show mobile header icons*/
+
+@media screen and (max-width: 670px) {
+
+  header .header-elements-wrap .header-elements-center {
+    width: 310px;
+  
+  }
+
+  header .header-elements-wrap .header-elements-center .header-elements-main {
+    width: 310px;
+    background-image: url('../img/header-main-icons-310-370.svg');
+    
+  }
+
+/* Media query 580px when burger menu isc coming nav elements are hiding*/
+
+@media screen and (max-width: 580px) {
+
+header nav .nav-element { 
+  display: none;
+}
+
+.social-logo-nav {
+  display: none;
+
+}
+
+}
+
+  
+}
