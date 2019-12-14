@@ -3,7 +3,7 @@
 .menu-wrap {
     position: absolute;
     top: 0px;
-    right: -10px;
+    right: 5px;
     z-index: 1;
     float: right;
     display: none;
@@ -14,7 +14,7 @@
   .menu-wrap .toggler {
     position: absolute;
     top: 8px;
-    right: 15px;
+    right: 10px;
     z-index: 2;
     cursor: pointer;
     width: 50px;
@@ -25,7 +25,7 @@
   .menu-wrap .hamburger {
     position: absolute;
     top: 8px;
-    right: 15px;
+    right: 10px;
     z-index: 1;
     width: 50px;
     height: 50px;
