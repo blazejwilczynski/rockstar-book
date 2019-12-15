@@ -230,10 +230,7 @@
     font-size: 18px;
   } 
 
-  .book {
-    display: none;
-  }
-
+ 
 } 
 
 /* media query 560px */
@@ -289,3 +286,37 @@
 
 
 } 
+
+  /* media query 380px */
+
+  @media screen and (max-width: 380px) {
+
+    .book .book-elements-wrap .cover-container {
+      height: 407px;
+      width: 285px;
+    }  
+
+    .book .book-elements-wrap .cover-container .rockstar-cover {
+      height: 386px;
+      width: 270px;
+    }
+  
+    .book .book-elements-wrap .cover-container  .cover-plate {
+      height: 386px;
+      width: 270px;
+    } 
+
+    .book .book-elements-wrap .book-download-container  .book-download-buttons .button-epub,.button-mobi,.button-pdf  {
+      font-size: 15.5px;
+      color: white;
+      
+      background: $orange;
+      border: 2px solid $orange;
+      border-radius: 2em;
+      padding:0.25em 1.0em;
+    }
+
+    
+
+
+  }
