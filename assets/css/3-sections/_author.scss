@@ -1,0 +1,397 @@
+.author {
+    height: 400px;
+    width: 100%;
+    background-color: $yellow-base;
+    margin-top: -10px;
+    clear: both;
+    content: "";
+    display: block;
+    position: relative;
+    z-index: 1;
+    padding-top: 35px;
+   
+}
+
+.author::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.author .author-info-wrap {
+  max-width: 1060px;
+  margin: 0 auto;
+  height: 330px;
+  z-index: 200;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.author .author-info-wrap .floppy  {
+  height: 330px;
+  width: 310px;
+  background-image: url('../img/author-floppy-310-330.svg');
+  background-repeat: no-repeat;
+
+}
+
+.author .author-info-wrap .bobek-photo-wrap {
+  height: 326px;
+  width: 310px;
+}
+
+.author .author-info-wrap .bobek-photo-wrap .photo-red-border {
+  height: 326px;
+  width: 310px;
+  background-color: $red-base;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.author .author-info-wrap .bobek-photo-wrap .photo-red-border .photo-white-border {
+  height: 320px;
+  width: 304px;
+  background-color: $white-base;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.author .author-info-wrap .bobek-photo-wrap .photo-red-border .photo-white-border .photo-blue-border {
+  height: 314px;
+  width: 298px;
+  background-color: $dark-blue;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.author .author-info-wrap .bobek-photo-wrap .photo-red-border .photo-white-border .photo-blue-border .bobek-photo {
+  height: 308px;
+  width: 292px;
+  background-color: $dark-blue;
+  border-radius: 2px;
+  background-image: url('../img/bobek-photo.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.author .author-info-wrap .about-author {
+  height: 330px;
+  width: 330px;
+}
+
+.author .author-info-wrap .about-author .author-info-banner {
+  height: 22px;
+  width: 59px;
+  background-image: url('../img/info-25-67.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 10px auto;
+}
+
+.author .author-info-wrap .about-author .author-description {
+  width: 100%;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 17px;
+  text-align: justify;
+  margin-top: 25px;
+
+}
+
+
+
+
+.author-element-1 {
+    height: 96px;
+    width: 800px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url('../img/header-element-1.svg');
+    background-repeat: no-repeat;
+    z-index: 0;
+    opacity: 0.99;
+  
+  }
+  
+  .author-element-2 {
+    height: 155px;
+    width: 476px;
+    position: absolute;
+    top: 245px;
+    right: 150px;
+    background-image: url('../img/header-element-2.svg');
+    background-repeat: no-repeat;
+    z-index: 0;
+    opacity: 0.99;
+  
+  }
+  
+  .author-element-3 {
+    height: 225px;
+    width: 342px;
+    position: absolute;
+    top: 175px;
+    left: 35px;
+    background-image: url('../img/header-element-3.svg');
+    background-repeat: no-repeat;
+    z-index: 0;
+    opacity: 0.99;
+  
+  }
+
+
+@media screen and (max-width: 1150px) { 
+  .author .author-info-wrap .floppy  {
+    display: none;
+  }
+
+  .author .author-info-wrap {
+    justify-content: center;
+  } 
+
+  .author .author-info-wrap .about-author {
+    margin-left: 30px;
+  }
+
+} 
+
+@media screen and (max-width: 800px) { 
+
+  .author {
+    height: 1100px;
+  }
+
+  .author .author-info-wrap .bobek-photo-wrap {
+    margin-top: 15px;
+  }
+  
+
+  .author .author-info-wrap {
+    max-width: 400px;
+    flex-wrap: wrap;
+  }
+
+  .author .author-info-wrap .floppy  {
+    display: block;
+    order: 3;
+  }
+
+
+  .author .author-info-wrap .about-author {
+    margin-left: 0px;
+    margin-top: 25px;
+  }
+
+  .author-element-3 {
+    display: none;
+    }
+
+  .author-element-2 {
+    top: 945px;
+    }  
+
+    .author .author-info-wrap .about-author {
+  height: 330px;
+  width: 330px;
+}
+
+.author .author-info-wrap .about-author .author-info-banner {
+  height: 22px;
+  width: 59px;
+  background-image: url('../img/info-25-67.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 10px auto;
+}
+
+.author .author-info-wrap .about-author .author-description {
+  width: 100%;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 17px;
+  text-align: justify;
+  margin-top: 25px;
+
+}
+
+}
+
+@media screen and (max-width: 370px) { 
+
+  .author .author-info-wrap .bobek-photo-wrap {
+    height: 306px;
+    width: 290px;
+  }
+  
+  .author .author-info-wrap .bobek-photo-wrap .photo-red-border {
+    height: 306px;
+    width: 290px;
+  }
+  
+  .author .author-info-wrap .bobek-photo-wrap .photo-red-border .photo-white-border {
+    height: 300px;
+    width: 284px;
+  }
+  
+  .author .author-info-wrap .bobek-photo-wrap .photo-red-border .photo-white-border .photo-blue-border {
+    height: 294px;
+    width: 278px;
+  }
+  
+  .author .author-info-wrap .bobek-photo-wrap .photo-red-border .photo-white-border .photo-blue-border .bobek-photo {
+    height: 288px;
+    width: 272px;
+  }
+
+  .author .author-info-wrap .floppy  {
+    height: 304px;
+    width: 290px;
+    margin-top: 35px;
+
+  }
+
+  .author .author-info-wrap .about-author {
+    height: 330px;
+    width: 280px;
+  }
+  
+
+  .author .author-info-wrap .about-author .author-description {
+    width: 100%;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 17px;
+    text-align: justify;
+    margin-top: 25px;
+  
+  }
+
+
+
+}
+  
+
+/* It's super bug, and currently I don't know how to fix it. The text is pushing outside the div,
+and also the 'author section' is not reacting properly for block elements. If you know the solution, mail me.
+I would be grateful!
+For now I'm changing margin-top value. Yes, I know it's super lame :< */ 
+
+@media screen and (max-width: 1150px) {
+    .author {
+      margin-top: 10px;            
+    }
+
+}  
+
+@media screen and (max-width: 950px) {
+    .author {
+      margin-top: 15px;            
+    }
+
+}  
+
+@media screen and (max-width: 900px) {
+    .author {
+      margin-top: -25px;            
+    }
+
+}  
+
+@media screen and (max-width: 500px) {
+    .author {
+      margin-top: 40px;            
+    }
+
+}  
+
+@media screen and (max-width: 499px) {
+    .author {
+      margin-top: 65px;            
+    }
+
+}  
+
+@media screen and (max-width: 470px) {
+    .author {
+      margin-top: 90px;            
+    }
+
+}
+ 
+@media screen and (max-width: 457px) {
+    .author {
+      margin-top: 110px;            
+    }    
+  
+
+}  
+
+@media screen and (max-width: 419px) {
+    .author {
+      margin-top: 140px;            
+    }    
+  
+
+}  
+
+@media screen and (max-width: 417px) {
+    .author {
+      margin-top: 160px;            
+    }    
+  
+
+}  
+
+@media screen and (max-width: 372px) {
+    .author {
+      margin-top: 200px;            
+    }    
+  
+
+}  
+
+@media screen and (max-width: 365px) {
+    .author {
+      margin-top: 225px;            
+    }    
+  
+
+}  
+
+@media screen and (max-width: 363px) {
+    .author {
+      margin-top: 250px;            
+    }    
+  
+
+}  
+
+@media screen and (max-width: 351px) {
+    .author {
+      margin-top: 275px;            
+    }    
+  
+
+}  
+
+@media screen and (max-width: 344px) {
+    .author {
+      margin-top: 295px;            
+    }    
+  
+
+}  
+
+/* End of this lame "hand" fixing bug */
